@@ -1,14 +1,16 @@
-package com.johan.pokedex.domain;
+package com.johan.pokedex.domain.entities;
+
+import io.realm.RealmObject;
 
 /**
  * Created by JohanFabiel on 13/12/2015.
  */
-public class PokemonMoves {
+public class PokemonMoves extends RealmObject {
 
-  protected String learn_type;
-  protected String name;
-  protected String level;
-  protected String resource_uri;
+  private String learn_type;
+  private String name;
+  private String level;
+  private String resource_uri;
 
   public String getLearn_type() {
     return learn_type;

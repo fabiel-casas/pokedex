@@ -1,14 +1,16 @@
-package com.johan.pokedex.domain;
+package com.johan.pokedex.domain.entities;
+
+import io.realm.RealmObject;
 
 /**
  * Created by JohanFabiel on 13/12/2015.
  */
-public class PokemonEvolution {
+public class PokemonEvolution extends RealmObject {
 
-  protected String level;
-  protected String method;
-  protected String resource_uri;
-  protected String to;
+  private String level;
+  private String method;
+  private String resource_uri;
+  private String to;
 
   public String getLevel() {
     return level;

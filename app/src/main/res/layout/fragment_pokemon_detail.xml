@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:showIn="@layout/activity_pokemon_detail"
+                tools:context="com.johan.pokedex.modules.detail.PokemonDetailFragment">
+
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/imageContainer"
+    android:background="@color/black"
+    android:foregroundGravity="center">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imageViewPokeImage"
+      android:src="@drawable/art_unknow"
+      android:layout_gravity="center"/>
+  </FrameLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/imageContainer"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <Button
+        android:id="@+id/buttonNextEvolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_pokedex"
+        android:backgroundTint="@color/blue_pokedex"
+        android:text="@string/pokemon_next_evolution"
+        android:visibility="gone"/>
+
+      <TextView
+        android:id="@+id/textViewPokemonName"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewEvolutionName"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewHP"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewAttack"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewDefence"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewSpeed"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewHeight"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewWeight"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+      <TextView
+        android:id="@+id/textViewDescription"
+        style="@style/PokemonDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressBar"
+    android:layout_centerInParent="true"/>
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageViewFavorite"
+    android:src="@drawable/ic_favorite_on"
+    android:layout_alignParentRight="true"
+    android:visibility="gone"/>
+</RelativeLayout>

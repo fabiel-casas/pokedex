@@ -11,4 +11,12 @@
     <color name="green_pokedex">#65b757</color>
     <color name="blue_pokedex">#28aafd</color>
 
+    <!-- Basic colors-->
+    <color name="green">#27D34D</color>
+    <color name="blue">#2A91BD</color>
+    <color name="orange">#FF9D2F</color>
+    <color name="red">#ff0a00</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>

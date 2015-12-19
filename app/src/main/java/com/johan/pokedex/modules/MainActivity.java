@@ -1,4 +1,4 @@
-package com.johan.pokedex;
+package com.johan.pokedex.modules;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.johan.pokedex.R;
+import com.johan.pokedex.modules.home.PokemonListFragment;
+
 public class MainActivity extends AppCompatActivity {
 
   @Override
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
+    getFragmentManager().beginTransaction().replace(R.id.container, new PokemonListFragment(), null).commit();
   }
 
   @Override

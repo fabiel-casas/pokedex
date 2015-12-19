@@ -1,11 +1,12 @@
-package com.johan.pokedex.domain;
+package com.johan.pokedex.domain.entities;
 
 /**
  * Created by JohanFabiel on 13/12/2015.
  */
-public class PokemonAbilities {
-  protected String name;
-  protected String resource_uri;
+public class PokemonEggGroup {
+
+  private String name;
+  private String resource_uri;
 
   public String getName() {
     return name;

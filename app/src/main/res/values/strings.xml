@@ -1,4 +1,15 @@
 <resources>
   <string name="app_name">Pokedex</string>
   <string name="action_settings">Settings</string>
+  <string name="title_activity_pokemon_detail">Pokemon Detail</string>
+  <string name="pokemon_name"><b>Pokemon Name: </b> %1$s</string>
+  <string name="pokemon_point_next_level"><b>Next Evolution in level: </b> %1$s </string>
+  <string name="pokemon_hp"><b>HP: </b> %1$s </string>
+  <string name="pokemon_attack"><b>Attack: </b> %1$s </string>
+  <string name="pokemon_defence"><b>Defence: </b> %1$s </string>
+  <string name="pokemon_speed"><b>Speed: </b> %1$s </string>
+  <string name="pokemon_height"><b>Height: </b> %1$s </string>
+  <string name="pokemon_weight"><b>Weight: </b> %1$s </string>
+  <string name="pokemon_description"><b>Description: </b> %1$s </string>
+  <string name="pokemon_next_evolution">Next Evolution</string>
 </resources>

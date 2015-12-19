@@ -1,11 +1,13 @@
-package com.johan.pokedex.domain;
+package com.johan.pokedex.domain.entities;
+
+import io.realm.RealmObject;
 
 /**
  * Created by JohanFabiel on 13/12/2015.
  */
-public class PokemonType {
-  protected String name;
-  protected String resource_uri;
+public class PokemonType extends RealmObject {
+  private String name;
+  private String resource_uri;
 
   public String getName() {
     return name;
